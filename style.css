@@ -1,0 +1,377 @@
+body{font-family: 'Lato', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.fix{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    transition: .3s;
+}
+ul li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.col-4{
+    width: 33.33%;
+    float: left;
+    padding: 0px 15px;
+ }
+ .col-6{
+    width: 50%;
+    float: left;
+    padding: 0px 15px;
+ }
+ .col-12{
+    width: 100%;
+    float: left;
+    padding: 0px 15px;
+ }
+
+
+
+/*header area*/
+.logo {
+    padding: 41px 0;
+    float: left;
+    width: 35%;
+}
+.search{
+    float: right;
+    width: 5%;
+    text-align: right;
+    margin: 50px 0;
+    position: relative;
+}
+.search a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background: #cecece;
+
+}
+
+
+.header-area {
+    min-height: 120px;
+    border-top: 5px solid #4272d7;
+}
+.main-menu {
+    padding: 50px 0;
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+.main-menu ul{}
+.main-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a {
+    padding: 10px 20px;
+    color: #666666;
+    font-size: 15px;
+}
+.main-menu ul li a:hover{
+    color: #4272d7;
+}
+.main-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}
+.main-menu ul li:hover>a {
+    color: #4272d7;
+}
+
+/*dropdown*/
+.main-menu ul li ul {
+    position: absolute;
+    top: 340%;
+    width: 290px;
+    background: #171a21;
+    border-top: 5px solid #4272d7;
+    left: 0;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden; 
+    z-index: 999;
+}
+.main-menu ul li ul li {
+    display: block;
+    left: 0;
+    text-align: left;
+    padding: 20px 15px;
+    transition: .5s;
+    border-bottom: 1px solid #666666;
+}
+.main-menu ul li ul li a {
+    color: #fff;
+}
+.main-menu ul li ul li:hover {
+    background: #4272d7;
+    color: #fff;
+}
+.main-menu ul li ul li:hover a{
+    color: #fff;
+}
+
+/*dropdown*/
+.main-menu ul li ul li ul.submenu2{
+    position: absolute;
+    top: 0%;
+    width: 290px;
+    background: #171a21;
+    border-top: 5px solid #4272d7;
+    left: 100%;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden; 
+}
+.main-menu ul li ul li:hover ul.submenu2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu ul li ul li ul:hover>a{
+    color: #4272d7;
+}
+
+
+/*slider-section*/
+.slider-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.slider-section h4 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.slider-section h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+.slider-section a {
+    background: #4272d7;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.owl-nav button.owl-prev span {
+    background: red;
+    font-size: 40px;
+    padding: 0px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    color: #fff;
+    line-height: 43px;
+}
+.owl-nav button.owl-next span{
+    background: red;
+    font-size: 40px;
+    padding: 0px 15px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    color: #fff;
+    line-height: 43px;
+}
+.owl-carousel button.owl-dot {
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.owl-dots {
+    position: absolute;
+    margin-top: -60px;
+    text-align: center;
+    left: 50%;
+    top: 100%;
+}
+button.owl-dot.active {
+    background: #4272d7;
+}
+
+
+/* hero are */
+.hero-section {
+    background: #4272d7;
+    padding: 40px 0;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+.text-hero {
+    float: left;
+    width: 70%;
+}
+.text-hero p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -23px;
+}
+.text-hero p span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hire-me {
+    float: right;
+    width: 30%;
+    margin-top: -10px;
+    text-align: right;
+}
+.hire-me a {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* feature-section */
+.feature-section {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.feature-item {
+    position: relative;
+}
+.feature-img{}
+.feature-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4272d7;
+    bottom: 0;
+    padding: 20px 35px;
+    transition: .3s;
+    transform: translateY(75%);
+}
+.feature-text i {
+    font-size: 30px;
+    color: #fff;
+    padding-right: 15px;
+}
+.feature-text h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 800;
+    color: #fff;
+    display: inline-block;
+}
+.feature-text p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    color: #e6e6e6;
+}
+.feature-text span i {
+    font-size: 15px;
+    display: inline-block;
+    padding-right: 5px;
+}
+.feature-text a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 15px;
+    display: inline-block;
+}
+.feature-item:hover .feature-text{
+    transform: translateY(0%);
+
+
+}
+
+/* servive-section */
+.servive-section {
+    background: #f0f0f0;
+    padding: 50px 0;
+}
+.service-tile{
+    position: relative;
+}
+.service-tile h2 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service-tile h2:before {
+    content: '';
+    background: #adadad;
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.service {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 15px;
+}
+.service-box{}
+.service-icon i {
+    width: 50px;
+    height: 50px;
+    background: #2059d3;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 25px;
+}
+.service-text h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 7px;
+}
+.service-text p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #828282;
+}
